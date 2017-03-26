@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SOP2016</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="css/animate.css" rel="stylesheet" />
+    <!-- Squad theme CSS -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="color/default.css" rel="stylesheet">
+	<link href="css/popup.css" rel="stylesheet">
+
+    <style>
+      #map-canvas {
+        height: 400px;
+      }
+    </style>
+    
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(52.3752277,4.8961868),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+        var marker = new google.maps.Marker({
+		  position: new google.maps.LatLng(52.3752277,4.8961868),
+  			map: map,
+  			title: 'Beurs van Berlage'
+			});
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+</head>
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	<!-- Preloader -->
+	<div id="preloader">
+	  <div id="load"></div>
+	</div>
+
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                    <h1>SOP2016</h1>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+      			<ul class="nav navbar-nav">
+		        	<li class="active"><a href="#intro">Home</a></li>		
+        			<li><a href="#description">Description</a></li>
+					<li><a href="#registration">Registration</a></li>
+					<li><a href="#importantdates">Important dates</a></li>
+					<li><a href="#program">Program</a></li>
+					<!-- <li><a href="#abstracts">Abstracts</a></li> -->
+          			<!-- <li><a href="#accommodation">Accommodation</a></li> -->
+					<li><a href="#location">Location</a></li>
+      			</ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+	<!-- Section: intro -->
+    <section id="intro" class="intro">	
+		<div class="slogan">
+			<h2><span style="color:#EC1414; text-shadow: -3px 1px 1px #000;">SOP 2016</span></h2>
+			<h2><span style="color:#EC1414; text-shadow: -3px 1px 1px #000;">Self-organized patterns </br>on complex networks</span></h2>
+            <h2><span style="color:#f25b5b; text-shadow: -3px 1px 1px #000;">21 September 2016 </span></h2>
+            <h2><span style="text-shadow: -3px 1px 1px #000;"><a href="http://www.ccs2016.org">A satellite workshop of the</br>2016 Conference on Complex Systems</a></span></h2>
+		</div>
+		<div class="page-scroll">
+			<a href="#description" class="btn btn-circle" style="color:#FFFFFF; text-shadow: -3px 1px 1px #000;">
+				<i class="fa fa-angle-double-down animated"></i>
+			</a>
+		</div>
+    </section>
+	<!-- /Section: intro -->
+
+	 <section id="description" class="home-section text-center">
+		<div class="heading-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="section-heading">
+							<h2>Description</h2>
+							<i class="fa fa-2x fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			Description
+			<div class="row">
+				<div class="col-lg-2 col-lg-offset-5">
+					<hr class="marginbot-20">
+				</div>
+			</div>
+	        <div class="row" align="left">
+	        	<div class="col-lg-8 col-lg-offset-2">
+	        		<p>Recent advances on the multidisciplinary science of complex networks have generated increasing interest on dynamical processes occurring on them, ranging from biology and physics to social science. Self-organization phenomena such as sycnhronization, chimera states or localized stationary and oscillatory patterns, can spontaneously emerge in such systems as a consequence of the interplay between the network architecture and nonlinear dynamics. The network architecture plays a role of paramount importance in seeding and shaping self-organized patterns, an observation which is nowadays accepted as a paradigm in the field of complex systems. Various reaction-diffusion systems (e.g. subjected to noise, time delay, feedback control) organized on different network architectures (e.g. symmetric or directed networks, trees, multiplexes, modular networks) are among the topics that have been addressed in both theoretical and experimental studies, exhibiting fascinating dynamical behaviours. </p>
+
+					<p>The main goals of the workshop are:
+						<ol>
+	  						<li>To gather together researchers of the field in order to discuss on the currently available families of models, their respective domain of applications, the corresponding set of emergent behaviours and the possible impact of different networks topologies (simplex, multiplex, multigraphs, modular networks, hierarchical networks, etc.).</li>
+	  						<li>To debate on the main challenges to be addressed within the field for years to come, both in theory and experiments.</li>
+	  						<li>To examine models validation with real data and analyze those stylized facts, which can be adequately reproduced.</li>
+	  						<li>To foster research by exchanging knowledge on methods for abstract models targeted to the set of emergent phenomena.</li>
+						</ol> 
+					</p>
+	        	</div>
+	        </div>		
+		</div>
+
+		
+		<div class="container">
+		Organizers
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-20">
+			</div>
+		</div>
+	        <div class="row" align="left">
+	        	<div class="col-lg-8 col-lg-offset-2">
+	        	<ul>
+	  				<li><a href="https://directory.unamur.be/staff/tcarlett"> Timoteo Carletti</a> </li>
+	  				<li><a href="http://nikos.techprolet.com/"> Nikos E. Kouvaris</a></li>
+	  				<li><a href="https://qcn.physics.uoc.gr/"> Johanne Hizanidis</a></li> 
+	  				<li><a href="https://sites.google.com/site/ducciofanelli1/home">Duccio Fanelli</a></li>
+	  				<li><a href="http://www.diaz-guilera.net/Albert_Diaz-Guilera/index.php"> Albert Diaz-Guilera</a></li>
+	  			</ul>	
+	        	</div>
+	        </div>		
+		</div>
+		<div class="container">
+		Keynote Speakers
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-20">
+			</div>
+		</div>
+	        <div class="row" align="left">
+	        	<div class="col-lg-8 col-lg-offset-2">
+	        		<ul>
+	  				<li>
+	  					<a href="http://www.k.mei.titech.ac.jp/members/nakao/index-e.html"> Hiroya Nakao</a>, Tokyo Institute of Technology, Japan  	  					
+						 (<a data-toggle="collapse" href="#collapse1">Abstract</a>)
+							<div id="collapse1" class="panel-collapse collapse">
+					    		<div class="panel-body">
+					    			Pattern formation and collective dynamics in reaction-diffusion systems on networks
+					    			<br><br>
+									Since Turing’s seminal work, reaction-diffusion models have played a central role in the analysis of various self-organized spatio-temporal patterns in nature. As pointed out by Othmer and Scriven already in 1971, it is straightforward to generalize the reaction-diffusion models to networks, which gives us a wider perspective on pattern formation. In this talk, several topics on pattern formation and collective dynamics in reaction-diffusion models on random networks will be discussed. We consider formation of Turing patterns in activator-inhibitor systems on networks, where difference in diffusivity of chemical species leads to destabilization of uniform states and formation of patterns. It is shown that, for networks with degree heterogeneity, simple mean-field approximation of the network can account for backbones of the developed patterns. We will also see that essentially the same mechanism, called Benjamin-Feir instability, destabilizes uniformly synchronized state and leads to collective dynamics in coupled oscillators on networks. More general types of diffusion-induced instabilities in reaction-diffusion systems with three chemical species or in directed networks will also be discussed. Some related unsolved issues, such as self-consistency analysis of developed patterns, bifurcation analysis of instability, and localization properties of Laplacian eigenmodes on networks, will also be mentioned. 
+								</div>
+							</div>   					
+	  					
+					</li>
+	  				<li>
+	  					<a href="http://www.fis.unipr.it/~raffaella.burioni/Site/Home.html"> Raffaella Burioni</a> Dipartimento di Fisica, Università di Parma 
+	  					(<a data-toggle="collapse" href="#collapse2">Abstract</a>)
+							<div id="collapse2" class="panel-collapse collapse">
+					    		<div class="panel-body">
+					    			Self Organized Bistability 
+					    			<br><br>
+									Multistability-understood as the existence of diverse stationary states under a fixed set of conditions—is ubiquitous in physics and in biology, it and leads to interesting spatial and temporal patterns. Motivated by several empirical observation of bimodal distributions of activity, we propose and analyze a theory for the self-organization to the point of phase-coexistence in systems exhibiting a first-order phase transition. It explains the emergence of regular avalanches patterns with attributes of scale-invariance which coexist with huge anomalous ones, with realizations in many fields.
+								</div>
+							</div> 
+	  				</li>
+	  				<li>
+	  					<a href="http://www.itp.tu-berlin.de/schoell/nlds/mitglieder/promovierte_mitarbeiter/omelchenko01/parameter/en/"> Iryna Omelchenko
+	  					</a> Technische Universität Berlin 
+	  					(<a data-toggle="collapse" href="#collapse3">Abstract</a>)
+							<div id="collapse3" class="panel-collapse collapse">
+					    		<div class="panel-body">
+					    			Chimera states: intriguing patterns in complex networks
+					    			<br><br>
+									Chimera states are complex spatio-temporal patterns that consist of coexisting domains of spatially coherent and incoherent dynamics. This counterintuitive phenomenon was first observed in 2002 in systems of identical oscillators with symmetric coupling topology. During the last decade, chimera states have been theoretically investigated in a wide range of networks, where different kinds of coupling schemes varying from regular nonlocal to completely random topology have been considered. Potential applications of chimera states in nature include the phenomenon of unihemispheric sleep in birds and dolphins, bump states in neural systems, power grids, and social systems. We discuss current state-of-the-art in studies of chimera states, and demonstrate recent findings. In particular, we analyze properties of chimera states in the systems of nonlinear oscillators, the role of local dynamics and network topologies. We also address the robustness of chimeras due to inhomogeneities, and possible strategies of their control.
+								</div>
+							</div>  
+	  				</li> 
+	  				</ul>	
+	        	</div>
+	        </div>		
+		</div>
+	</section>
+
+		
+
+
+	<!-- Section: registration -->
+    <section id="registration" class="home-section text-center bg-gray">
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading">
+					<h2>Registration</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-20">
+			</div>
+		</div>
+        <div class="row">
+        	<div class="col-lg-6 col-lg-offset-3">
+				<p>Registration is now open. Please submitt your abstract through: <a href="https://easychair.org/conferences/?conf=sop16" style="font-size:30px"> EasyChair</a></p>
+				<p>Registration to <a href="http://www.ccs2016.org/"> CCS2016</a> is required in order to attend the workshop. There are no additional costs.</p>
+            </div>
+        </div>		
+		</div>
+	</section>
+
+
+    <section id="importantdates" class="home-section text-center bg-gray">
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading">
+					<h2>Important dates</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-20">
+			</div>
+		</div>
+        <div class="row">
+        	<div class="col-lg-6 col-lg-offset-3">
+				<p>Abstract submission (NEW) deadline: 21 July 2016</p>
+				<p>Notification of acceptance: 30 July 2016</p>
+				<p>Workshop: 21 September 2016</p>
+								
+            </div>
+        </div>		
+		</div>
+	</section>
+
+
+<!-- Section: program -->
+    <section id="program" class="home-section text-center">
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading">
+					<h2>Program</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+					</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-20">
+			</div>
+		</div>
+        <div class="row">
+        	<div class="col-lg-8 col-lg-offset-2">
+        	<!-- To be announced. -->
+
+               <p><strong>Wednesday, 21 September 2016</strong></p>
+                
+				<table border="1" cellpadding="1" cellspacing="1" style="width:100%">
+					<tbody>
+						
+						<tr>
+							<td style="width:150px; text-align:right; padding:10px;">10:00 - 10:10</td>
+							<td style="text-align:left; padding:10px;">
+							<div>Opening of the SOP2016 meeting</div>
+							</td>
+						</tr>
+												
+						<tr>
+							<td style="width:150px; text-align:right; padding:10px;">10:10 - 11:00</td>
+							<td style="text-align:left; padding:10px;">Invited Talk
+							<br><strong>Raffaella Burioni</strong>, Self Organized Bistability </td>
+						</tr>
+																																
+						<td style="width:150px; text-align:right; padding:10px;">11:00 - 11:50</td>
+							<td style="text-align:left; padding:10px;">Invited Talk
+							<br><strong>Hiroya Nakao</strong>, Pattern formation and collective dynamics in reaction-diffusion systems on networks </td>
+						</tr>				
+				
+						<tr>
+							<td style="width:150px; text-align:right; padding:10px;">11:50 - 12:30</td>
+							<td style="text-align:left; padding:10px;">Contributed Talks
+							<ul>
+							<li><strong> M. Asllani</strong>, <i>Recent developments of Turing pattern formation in complex networks</i> (20 min)</li>
+							<li><strong> A. Allen-Perkins</strong>, <i>Inducing Self-Organized Criticality in a network toy model by neighborhood assortativity
+							</i> (20 min)</li>
+							</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td style="width:150px; text-align:right; padding:10px;">12:30 - 13:30</td>
+							<td style="text-align:left; padding:10px;">Lunch break</td>
+						</tr>
+
+						<td style="width:150px; text-align:right; padding:10px;">13:30 - 14:15</td>
+							<td style="text-align:left; padding:10px;">Keynote Talk CSS</td>
+						</tr>
+
+						<td style="width:150px; text-align:right; padding:10px;">14:20 - 15:10</td>
+							<td style="text-align:left; padding:10px;">Invited Talk
+							<br><strong>Iryna Omelchenko</strong>, Chimera states: intriguing patterns in complex networks </td>
+						</tr>
+
+						<tr>
+							<td style="width:150px; text-align:right; padding:10px;">15:10 - 15:50</td>
+							<td style="text-align:left; padding:10px;">Contributed Talks
+							<ul>
+							<li><strong> S. Morse</strong>, <i>Persistent Cascades: Detecting the fundamental patterns of information spread in a social network</i> (20 min)</li>
+							
+							<li><strong> A. Grimm</strong>, <i>Nestedness in Communication Networks: From Information Exchange to Topology</i> (20 min)</li>
+
+							</ul>
+							</td>
+						</tr>
+																		
+						<tr>
+							<td style="width:150px; text-align:right; padding:10px;">15:50</td>
+							<td style="text-align:left; padding:10px;"> Conclusions and coffee break</td>
+						</tr>
+						
+					</tbody>
+				</table>
+				
+        	</div>
+        </div>		
+		</div>
+	</section>
+
+	<!-- Section: Location -->
+    <section id="location" class="home-section text-center bg-gray">
+
+		<div class="heading-about">
+			<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="section-heading">
+					<h2>Location</h2>
+					<i class="fa fa-2x fa-angle-down"></i>
+                    </div>
+				</div>
+            </div>
+			</div>
+        </div>
+		
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-5">
+				<hr class="marginbot-20">
+			</div>
+		</div>
+        <div class="row">
+        	<div class="col-lg-6 col-lg-offset-3">
+				<p>The workshop will take place at </p>
+				<p style="font-size:16px">
+					<strong>Beurs Van Berlage, Amsterdam, The Netherlands</strong><br/>
+					Damrak 243,<br/>
+					1012 ZJ Amsterdam,<br/>
+					The Netherlands<br/>
+				</p>
+                <div id="map-canvas"></div>
+            </div>		
+		</div>
+	</section>
+
+
+
+	<footer class="bg-white">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<div class="page-scroll marginbot-30">
+						<a href="http://www.ccs2016.org"><img src="img/logo_ccs.png" height="50px"/></a>
+						<a href="http://www.ub.edu/web/ub/en/index.html?"><img src="img/logo_ub.png" height="50px"/></a>
+						<a href="http://www.clabb.eu/index.php"><img src="img/logo_clabb.png" height="50px"/></a>
+						<a href="http://www.multiplexproject.eu/"><img src="img/logo_multiplex.png" height="50px"/></a>
+						<a href="http://www.unamur.be/"><img src="img/UNamur.jpg" height="50px"/></a>
+						<a href="https://directory.unamur.be/staff/tcarlett"><img src="img/LOGO_naxysGG2.png" height="50px"/></a>
+						<a href="http://www.unifi.it/"><img src="img/logo_firenze.png" height="50px"/></a>
+						<a href="http://www.uni-potsdam.de/cosmos-itn/"><img src="img/logo_firenze2.png" height="50px"/></a>
+						<a href="http://www.demokritos.gr/"><img src="img/head.png" height="50px"/></a>
+						<a href="https://qcn.physics.uoc.gr"><img src="img/logo_qcn.png" height="50px"/></a>
+
+					</div>
+				</div>
+			</div>	
+		</div>
+	</footer>
+
+    <!-- Core JavaScript Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>	
+	<script src="js/jquery.scrollTo.js"></script>
+	<script src="js/wow.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
